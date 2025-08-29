@@ -10,5 +10,6 @@ Clone the repository to your local machine using SSH (generate an SSH key if nee
 Create a new branch named after your username (e.g., Tutedude).
 
 Add your Flask project files to this branch.
+![alt text](images/4.png)
 
 Commit the changes and merge the branch into the main branch.
