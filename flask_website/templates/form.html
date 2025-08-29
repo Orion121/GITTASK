@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Data</title>
+</head>
+<body>
+    <h2>Submit Data</h2>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <ul>
+        {% for message in messages %}
+          <li style="color:red;">{{ message }}</li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+</body>
+  <form method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    <label for="value">Value:</label>
+    <input type="text" id="value" name="value" required><br><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Submitted Data</h3>
+  {% if all_data and all_data|length > 0 %}
+  <table border="1" cellpadding="5" cellspacing="0">
+    <tr>
+      <th>Name</th>
+      <th>Value</th>
+    </tr>
+    {% for item in all_data %}
+    <tr>
+      <td>{{ item['name'] }}</td>
+      <td>{{ item['value'] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  {% else %}
+  <p>No data submitted yet.</p>
+  {% endif %}
+</body>
+</html>
