@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, render_template, request, jsonify
 from pymongo import MongoClient
 import os
 from dotenv import load_dotenv
@@ -12,6 +12,10 @@ MONGO_URI = os.getenv('MONGO_URI')
 client = MongoClient(MONGO_URI)
 db = client['FlaskDb']
 todo_collection = db["items"]
+
+@app.route('/', methods=['GET'])
+def index():
+    return render_template('form.html')
 
 @app.route('/submittodoitem', methods=['POST'])
 def submit_todo_item():
