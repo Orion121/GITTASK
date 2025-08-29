@@ -27,7 +27,9 @@ Commit the changes and merge the branch into the main branch.
 ![alt text](images/6.png)
 
 Update the content of the JSON file used for the /api route in this branch.
-
 Merge the <your_name>_new branch into the main branch.
 If there are conflicts during the merge, resolve them by accepting the changes from the <your_name>_new branch.
 Add the resolved changes to the staging area, commit them, and push the updates to the remote repository.
+
+![alt text](images/7.png)
+
