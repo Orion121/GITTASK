@@ -42,10 +42,15 @@
 ### Item Name
 ### Item Description
 ![alt text](images/8.png)
+
+![alt text](images/9.png)
 ### Backend API in master_2:
 ### In the master_2 branch, create a backend route named /submittodoitem.
 ### This route will:
 ### Accept itemName and itemDescription via a POST request.
 ### Store these details in a MongoDB database.
+![alt text](images/13.png)
 ### Merging Changes:
 ### Merge the changes from both master_1 and master_2 into the main branch.
+![alt text](images/11.png)
+
