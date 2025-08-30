@@ -54,3 +54,32 @@
 ### Merge the changes from both master_1 and master_2 into the main branch.
 ![alt text](images/11.png)
 
+## 4. Enhancing the To-Do Form in master_1:
+### In the master_1 branch, add the following fields to the To-Do form:
+### Item ID
+### Item UUID
+### Item Hash
+### Committing in Sequence:
+#### Add and commit each field separately in the following order:
+#### First commit: Add Item ID field.
+#### Second commit: Add Item UUID field.
+#### Third commit: Add Item Hash field.
+
+![alt text](images/14.png)
+![alt text](images/15.png)
+
+### Merging to main:
+### Merge the master_1 branch into the main branch.
+### Git Reset and Commit Deletion:
+### In the main branch, use Git Reset to roll back to the commit where only the Item ID field was added.
+### Use git reset --soft to ensure changes remain staged.
+### Re-commit this state to the main branch.
+### Merge this updated state to the main branch.
+### Rebasing Changes:
+### Rebase the updated changes in the main branch to the master_1 branch.
+### Clarification:
+### During rebasing, preserve individual commits to maintain the commit history for each change (i.e., do not squash commits).
+### Use git rebase main master_1 to integrate changes from the main branch back into the master_1 branch.
+![alt text](images/16.png)
+
+## Author : Shantum Sharma
